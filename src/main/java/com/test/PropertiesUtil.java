@@ -1,10 +1,7 @@
 package com.test;
 
-import com.test.config.CommonsPropertiesUtils;
-import org.apache.commons.configuration.Configuration;
 import java.io.FileInputStream;
 import java.util.Properties;
-import static com.test.config.CommonsPropertiesUtils.*;
 
 public class PropertiesUtil {
     public static final Properties prop = getProperties();
@@ -27,8 +24,8 @@ public class PropertiesUtil {
 
     public static final String CACHE_7006_PATH = prop.getProperty("Cache_7006_Path");
 
-//    public static final Configuration config = CommonsPropertiesUtils.getCommonsPropertis();
-//    public static final String ip = config.getString("ip");
+//    public static final Configuration file = CommonsPropertiesUtils.getCommonsPropertis();
+//    public static final String ip = file.getString("ip");
 
 
 
