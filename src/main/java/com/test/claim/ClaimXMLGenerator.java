@@ -39,7 +39,7 @@ public class ClaimXMLGenerator {
         accidentNo= getUniqueAccidentNo();
         claimNo=getUniqueClaimNo();
         ClaimTemp ct = new ClaimTemp();
-        newClaimXml = ct.getClaimXml("js",accidentNo,claimNo,"2373","01","VF7N0RFN18AF11679");
+        newClaimXml = ct.getClaimXml("scc",accidentNo,claimNo,"2345","01","VF7N0RFN18AF11679");
 
         return newClaimXml;
     }

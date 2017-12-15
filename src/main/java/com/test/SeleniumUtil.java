@@ -1,7 +1,12 @@
 package com.test;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.util.Set;
 
@@ -61,5 +66,26 @@ public class SeleniumUtil {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 在给定的时间内去查找元素，如果没找到则超时，抛出异常
+     * */
+    public void waitForElementToLoad(int elementTimeOut, final By By) {
+        log.info("开始查找元素[" + By + "]");
+        try {
+            (new WebDriverWait(driver, elementTimeOut)).until(new ExpectedCondition<Boolean>() {
+
+                public Boolean apply(WebDriver driver) {
+                    WebElement element = driver.findElement(By);
+                    return element.isDisplayed();
+                }
+            });
+        } catch (TimeoutException e) {
+            log.error("超时!! " + elementTimeOut + " 秒之后还没找到元素 [" + By + "]");
+            Assert.fail("超时!! " + elementTimeOut + " 秒之后还没找到元素 [" + By + "]");
+
+        }
+        log.info("找到了元素 [" + By + "]");
     }
 }

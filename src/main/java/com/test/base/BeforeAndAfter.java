@@ -9,8 +9,8 @@ import org.testng.annotations.BeforeClass;
 
 public class BeforeAndAfter {
     private TestEnvironmentSetup ts;
-    protected WebDriver chrome_driver;
-    protected Log log;
+    public WebDriver chrome_driver;
+    public Log log;
     private String testcaseName;
     @BeforeClass
     public void setUp(){

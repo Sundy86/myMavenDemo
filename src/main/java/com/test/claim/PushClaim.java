@@ -24,6 +24,7 @@ public class PushClaim {
 
     public void importClaimTask() throws IOException, InterruptedException {
         String soapRequestData = cx.getNewClaimXML();
+        System.out.println(soapRequestData);
         CloseableHttpClient client = HttpClients.createDefault();
         HttpPost post = new HttpPost(PUSHCLAIM_URL);
         StringEntity myEntity2 = new StringEntity(soapRequestData.toString(), "UTF-8");

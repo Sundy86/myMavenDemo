@@ -1,12 +1,11 @@
 package com.test.data2;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import org.testng.annotations.DataProvider;
 
-import static com.test.PropertiesUtil.CANCLERULE_SHEET_NAME;
-import static com.test.PropertiesUtil.CHANDAO_EXCEL_SHEET_NAME;
-import static com.test.PropertiesUtil.ESTIMATE_EXCEL_SHEET_NAME;
+import static com.test.PropertiesUtil.*;
 
 public class DataProviderForExcel {
     @DataProvider()
@@ -25,5 +24,12 @@ public class DataProviderForExcel {
         else {
             return new ExcelData().getData(CHANDAO_EXCEL_SHEET_NAME, testcasename);
         }
+    }
+
+    @DataProvider(name="searchData")
+    public static Object[][] data() throws IOException
+    {
+        //获取Excel文件的测试数据
+        return new ExcelData().getData(filepath, "testData.xlsx","ruleNo");
     }
 }

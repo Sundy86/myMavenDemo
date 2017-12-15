@@ -1,5 +1,6 @@
 package com.test;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -23,6 +24,9 @@ public class PropertiesUtil {
     public static final String CHANDAO_EXCEL_SHEET_NAME = prop.getProperty("chandao_excelSheetName");
 
     public static final String CACHE_7006_PATH = prop.getProperty("Cache_7006_Path");
+
+    public static final String filepath=System.getProperty("user.dir")+ File.separator+"testdata"+File.separator;
+
 
 //    public static final Configuration file = CommonsPropertiesUtils.getCommonsPropertis();
 //    public static final String ip = file.getString("ip");

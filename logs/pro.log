@@ -7795,3 +7795,127 @@
 2017-12-11 at 10:48:05 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入规则编号：
 2017-12-11 at 10:48:05 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击查询按钮
 2017-12-11 at 10:48:10 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则编号链接
+2017-12-15 at 10:18:14 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.claim.PushClaim)  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:pushClaimResponse xmlns:ns2="http://inbound.template.interfaces.cccis.com/"><return>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;claimResponse&gt;
+  &lt;resultCode&gt;000&lt;/resultCode&gt;
+  &lt;message&gt;success&lt;/message&gt;
+  &lt;claimUniqueId&gt;CCCIS_DEMO_CLAIM_12151018129411&lt;/claimUniqueId&gt;
+  &lt;accidentNo&gt;CCCIS_DEMO_ACC_12151018129411&lt;/accidentNo&gt;
+&lt;/claimResponse&gt;
+</return></ns2:pushClaimResponse></soap:Body></soap:Envelope>
+2017-12-15 at 10:19:56 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.claim.PushClaim)  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:pushClaimResponse xmlns:ns2="http://inbound.template.interfaces.cccis.com/"><return>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;claimResponse&gt;
+  &lt;resultCode&gt;000&lt;/resultCode&gt;
+  &lt;message&gt;success&lt;/message&gt;
+  &lt;claimUniqueId&gt;CCCIS_DEMO_CLAIM_12151019551411&lt;/claimUniqueId&gt;
+  &lt;accidentNo&gt;CCCIS_DEMO_ACC_12151019551411&lt;/accidentNo&gt;
+&lt;/claimResponse&gt;
+</return></ns2:pushClaimResponse></soap:Body></soap:Envelope>
+2017-12-15 at 11:43:50 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:43:56 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入用户名：scc
+2017-12-15 at 11:43:56 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入密码：1
+2017-12-15 at 11:43:57 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入验证码：1
+2017-12-15 at 11:43:57 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击登录按钮
+2017-12-15 at 11:44:18 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/claim/estimateTaskList?base=%2Fweb-suite
+2017-12-15 at 11:44:18 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则管理菜单
+2017-12-15 at 11:44:20 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  等待10000ms
+2017-12-15 at 11:44:30 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/sysmanagement/rules/toCompanyRulesManagement
+2017-12-15 at 11:44:30 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入规则编号：0101010002
+2017-12-15 at 11:44:30 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击查询按钮
+2017-12-15 at 11:44:36 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则编号链接
+2017-12-15 at 11:44:41 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击是否应用
+2017-12-15 at 11:44:44 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击保存
+2017-12-15 at 11:44:44 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:44:44 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入用户名：scc
+2017-12-15 at 11:44:44 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:45:40 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:45:42 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入用户名：scc
+2017-12-15 at 11:45:42 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入密码：1
+2017-12-15 at 11:45:42 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入验证码：1
+2017-12-15 at 11:45:42 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击登录按钮
+2017-12-15 at 11:45:56 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/claim/estimateTaskList?base=%2Fweb-suite
+2017-12-15 at 11:45:56 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则管理菜单
+2017-12-15 at 11:45:59 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  等待10000ms
+2017-12-15 at 11:46:09 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/sysmanagement/rules/toCompanyRulesManagement
+2017-12-15 at 11:46:09 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入规则编号：0101030052
+2017-12-15 at 11:46:10 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击查询按钮
+2017-12-15 at 11:46:15 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则编号链接
+2017-12-15 at 11:46:20 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击是否应用
+2017-12-15 at 11:46:23 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击保存
+2017-12-15 at 11:46:27 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击确定
+2017-12-15 at 11:46:27 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:46:28 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入用户名：scc
+2017-12-15 at 11:46:28 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入密码：1
+2017-12-15 at 11:46:28 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入验证码：1
+2017-12-15 at 11:46:29 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击登录按钮
+2017-12-15 at 11:46:41 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/claim/estimateTaskList?base=%2Fweb-suite
+2017-12-15 at 11:46:41 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则管理菜单
+2017-12-15 at 11:46:43 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  等待10000ms
+2017-12-15 at 11:46:53 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/sysmanagement/rules/toCompanyRulesManagement
+2017-12-15 at 11:46:53 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入规则编号：0101030004
+2017-12-15 at 11:46:54 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击查询按钮
+2017-12-15 at 11:46:59 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则编号链接
+2017-12-15 at 11:47:04 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击是否应用
+2017-12-15 at 11:47:07 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击保存
+2017-12-15 at 11:47:11 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击确定
+2017-12-15 at 11:47:11 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:47:12 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入用户名：scc
+2017-12-15 at 11:47:12 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入密码：1
+2017-12-15 at 11:47:12 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入验证码：1
+2017-12-15 at 11:47:12 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击登录按钮
+2017-12-15 at 11:47:25 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/claim/estimateTaskList?base=%2Fweb-suite
+2017-12-15 at 11:47:25 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则管理菜单
+2017-12-15 at 11:47:32 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  等待10000ms
+2017-12-15 at 11:47:42 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/sysmanagement/rules/toCompanyRulesManagement
+2017-12-15 at 11:47:42 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入规则编号：0101030006
+2017-12-15 at 11:47:42 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击查询按钮
+2017-12-15 at 11:47:52 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则编号链接
+2017-12-15 at 11:48:02 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击是否应用
+2017-12-15 at 11:48:10 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击保存
+2017-12-15 at 11:48:24 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击确定
+2017-12-15 at 11:52:37 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:52:39 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入用户名：scc
+2017-12-15 at 11:52:40 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入密码：1
+2017-12-15 at 11:52:40 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入验证码：1
+2017-12-15 at 11:52:40 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击登录按钮
+2017-12-15 at 11:52:59 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/claim/estimateTaskList?base=%2Fweb-suite
+2017-12-15 at 11:52:59 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则管理菜单
+2017-12-15 at 11:53:01 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  等待10000ms
+2017-12-15 at 11:53:11 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/sysmanagement/rules/toCompanyRulesManagement
+2017-12-15 at 11:53:11 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入规则编号：0101030053
+2017-12-15 at 11:53:11 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击查询按钮
+2017-12-15 at 11:53:16 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则编号链接
+2017-12-15 at 11:53:21 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击是否应用
+2017-12-15 at 11:53:25 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击保存
+2017-12-15 at 11:53:28 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击确定
+2017-12-15 at 11:53:28 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:53:30 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入用户名：scc
+2017-12-15 at 11:53:30 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入密码：1
+2017-12-15 at 11:53:30 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入验证码：1
+2017-12-15 at 11:53:30 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击登录按钮
+2017-12-15 at 11:55:03 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  登录到定损列表页面
+2017-12-15 at 11:55:08 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入用户名：scc
+2017-12-15 at 11:55:08 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入密码：1
+2017-12-15 at 11:55:08 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入验证码：1
+2017-12-15 at 11:55:09 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击登录按钮
+2017-12-15 at 11:55:24 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/claim/estimateTaskList?base=%2Fweb-suite
+2017-12-15 at 11:55:25 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则管理菜单
+2017-12-15 at 11:55:27 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  等待10000ms
+2017-12-15 at 11:55:37 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/sysmanagement/rules/toCompanyRulesManagement
+2017-12-15 at 11:55:37 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入规则编号：0101038004
+2017-12-15 at 11:55:37 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击查询按钮
+2017-12-15 at 11:55:42 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则编号链接
+2017-12-15 at 11:55:47 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击是否应用
+2017-12-15 at 11:55:50 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击保存
+2017-12-15 at 11:55:54 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击确定
+2017-12-15 at 11:55:54 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则管理菜单
+2017-12-15 at 11:55:56 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  等待10000ms
+2017-12-15 at 11:56:06 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  http://192.168.200.14:7001/web-suite/sysmanagement/rules/toCompanyRulesManagement
+2017-12-15 at 11:56:06 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  输入规则编号：0101038005
+2017-12-15 at 11:56:06 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击查询按钮
+2017-12-15 at 11:56:11 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击规则编号链接
+2017-12-15 at 11:56:16 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击是否应用
+2017-12-15 at 11:56:19 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击保存
+2017-12-15 at 11:56:23 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击确定
