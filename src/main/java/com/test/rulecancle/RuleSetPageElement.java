@@ -11,7 +11,7 @@ public class RuleSetPageElement {
     WebDriver driver;
     Log log ;
 
-    public static  final By ruleMenu = By.ByXPath("//li[@role='menuitem']/a[contains(text(),'规则')]");
+   // public static  final By ruleMenu = By.ByXPath("//li[@role='menuitem']/a[contains(text(),'规则')]");
      @FindBy(xpath = "//li[@role='menuitem']/a[contains(text(),'规则')]")
     WebElement ruleMenu;
 
