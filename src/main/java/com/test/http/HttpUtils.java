@@ -2,6 +2,7 @@ package com.test.http;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.TypeReference;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -191,27 +192,27 @@ public class HttpUtils {
         String result = null;
         String url ="http://api.superepc.com/vtm/DataFunc?grant_code=XF9JKY0R&is_car_config=0&isCN=1&vinCode=LGBG22E22AY081092";
         try {
-          //  result = doGet("http://123.58.251.183:8080/goods/UserServlet?method=loginMobile&loginname=test1&loginpass=test1");
-            result = doGet(url);
-
+         result = doGet("http://123.58.251.183:8080/goods/UserServlet?method=loginMobile&loginname=test1&loginpass=test1");
+           String  result1 = doGet(url);
+           System.out.println(result);
         } catch (HttpClientException e) {
             e.printStackTrace();
         }
        //{"msg":"登录成功","uid":"587038694C1C415DB0FA35C1AC6DE12D","code":"1"}
         //JSONObject 的方式转化JSON字符串
-        JSONObject object = (JSONObject) JSON.parse(result);
-        System.out.println("JSONObject  uid  = "+object.get("uid"));
-
-        //Map 的方式转化JSON字符串
-        Map<String,String> stringStringMap = (Map<String,String>) JSON.parse(result);
-        System.out.println("uid  = "+stringStringMap.get("uid"));
-        for (String s : stringStringMap.keySet()) {
-            System.out.println(s + "==>" +stringStringMap.get(s));
-        }
+//        JSONObject object = (JSONObject) JSON.parse(result);
+//        System.out.println("JSONObject  retCode  = "+object.get("retCode"));
+//
+//        //Map 的方式转化JSON字符串
+//        Map<String,String> stringStringMap = (Map<String,String>) JSON.parse(result);
+//        System.out.println("uid  = "+stringStringMap.get("retCode"));
+//        for (String s : stringStringMap.keySet()) {
+//            System.out.println(s + "==>" +stringStringMap.get(s));
+//        }
 
         //对象 的方式转化JSON字符串
-        LoginInfo loginInfo = JSON.parseObject(result,LoginInfo.class);
-        System.out.println("Object uid  = "+loginInfo.getUid());
+//        LoginInfo loginInfo = JSON.parseObject(result,LoginInfo.class);
+//        System.out.println("Object uid  = "+loginInfo.getUid());
 
 //        Map<String,Object> params = new HashMap<String,Object>();
 //        params.put("method", "loginMobile");
@@ -223,7 +224,7 @@ public class HttpUtils {
 //        } catch (HttpClientException e) {
 //            e.printStackTrace();
 //        }
-        System.out.println(result);
+      //  System.out.println(result);
     }
 
 
