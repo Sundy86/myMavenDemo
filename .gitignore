@@ -1,16 +1,14 @@
-# Compiled class file
 .idea/
-*.class
+.meta-data/
+node_modules/*
+*/target/*
+*.iml
+target/
+out/
+.sass-cache/*
+dep.txt
+classes/*
 
+tomcat.*
 
-
-# Package Files #
-*.jar
-*.war
-*.bak
-
-
-
-/target
-/lib
-/screenshot
+*.log
