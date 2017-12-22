@@ -1,8 +1,11 @@
 package com.test.claim;
 
 import com.test.Log;
+import com.test.http.HttpClientException;
+import com.test.http.HttpUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -22,25 +25,16 @@ public class PushClaim {
         importClaimTask();
     }
 
-    public void importClaimTask() throws IOException, InterruptedException {
-        String soapRequestData = cx.getNewClaimXML();
-        System.out.println(soapRequestData);
-        CloseableHttpClient client = HttpClients.createDefault();
-        HttpPost post = new HttpPost(PUSHCLAIM_URL);
-        StringEntity myEntity2 = new StringEntity(soapRequestData.toString(), "UTF-8");
-        myEntity2.setContentType("application/soap+xml;charset=UTF-8");
-        post.setEntity(myEntity2);
-        HttpResponse response = client.execute(post);
-
-        if (response.getStatusLine().getStatusCode() == 200) {
-            HttpEntity resEntity = response.getEntity();
-            String result = EntityUtils.toString(resEntity, "UTF-8");
-            log.info(result);
-        } else {
-            log.info("请求失败");
+    public void importClaimTask()  {
+        try {
+            String soapRequestData = cx.getNewClaimXML();
+            String ret =  HttpUtils.doPostByType("soap+xml",PUSHCLAIM_URL,soapRequestData);
+            System.out.println(ret);
+        } catch (HttpClientException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-        Thread.sleep(2000);
     }
 
     public String getAccidentNo() throws IOException, InterruptedException  {

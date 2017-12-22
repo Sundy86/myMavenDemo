@@ -3,6 +3,7 @@ package com.test.json;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -62,5 +63,13 @@ public class FastJsonTest {
         for (Student student : studentList2) {
             System.out.println(student);
         }
+        System.out.println("===================================================");
+        Map<String, Object> maps = new HashMap<String,Object>();
+        maps.put("grant_code","XF9JKY0R");
+        maps.put("is_car_config",0);
+        maps.put("isCN",1);
+        maps.put("vinCode","LGBG22E22AY081092");
+        String jsonParam = JSON.toJSONString(maps);
+        System.out.println(jsonParam);
     }
 }

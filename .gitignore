@@ -1,4 +1,5 @@
 # Compiled class file
+.idea/
 *.class
 
 
@@ -13,4 +14,3 @@
 /target
 /lib
 /screenshot
-.idea/

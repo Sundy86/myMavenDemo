@@ -7919,3 +7919,21 @@
 2017-12-15 at 11:56:16 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击是否应用
 2017-12-15 at 11:56:19 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击保存
 2017-12-15 at 11:56:23 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.rulecancle.RuleCancleCase)  点击确定
+2017-12-22 at 10:30:16 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.claim.PushClaim)  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:pushClaimResponse xmlns:ns2="http://inbound.template.interfaces.cccis.com/"><return>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;claimResponse&gt;
+  &lt;resultCode&gt;000&lt;/resultCode&gt;
+  &lt;message&gt;success&lt;/message&gt;
+  &lt;claimUniqueId&gt;CCCIS_DEMO_CLAIM_12221030131731&lt;/claimUniqueId&gt;
+  &lt;accidentNo&gt;CCCIS_DEMO_ACC_12221030131731&lt;/accidentNo&gt;
+&lt;/claimResponse&gt;
+</return></ns2:pushClaimResponse></soap:Body></soap:Envelope>
+2017-12-22 at 14:39:32 CST INFO  com.test.Log 21 info - [Thread: 1](com.test.claim.PushClaim)  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:pushClaimResponse xmlns:ns2="http://inbound.template.interfaces.cccis.com/"><return>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;claimResponse&gt;
+  &lt;resultCode&gt;000&lt;/resultCode&gt;
+  &lt;message&gt;success&lt;/message&gt;
+  &lt;claimUniqueId&gt;CCCIS_DEMO_CLAIM_12220239302901&lt;/claimUniqueId&gt;
+  &lt;accidentNo&gt;CCCIS_DEMO_ACC_12220239302901&lt;/accidentNo&gt;
+&lt;/claimResponse&gt;
+</return></ns2:pushClaimResponse></soap:Body></soap:Envelope>

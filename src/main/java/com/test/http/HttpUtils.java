@@ -3,6 +3,8 @@ package com.test.http;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
+import com.sun.xml.internal.messaging.saaj.soap.MultipartDataContentHandler;
+import org.apache.commons.io.FileUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -12,14 +14,19 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
+
+import javax.servlet.MultipartConfigElement;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -85,7 +92,21 @@ public class HttpUtils {
     public static String doGet(String url) throws HttpClientException {
         return doGet(url,null);
     }
+    public static String doPost(String url, String params,String regex) throws HttpClientException {
+        String[] param =params.split(regex);
+        Map<String,Object> map = new HashMap<String,Object>();
+        for(int i=0;i<param.length;i++){
+            String[] pp = param[i].split("=");
+            for(String p:pp){
+                map.put(pp[0],pp[1]);
+            }
+        }
+        return doPost(url,map,null);
+    }
 
+    public static String doPost(String url, Map<String, Object> params) throws HttpClientException {
+        return doPost(url,params,null);
+    }
     public static String doPost(String url, Map<String, Object> params, Map<String, Object> header)
             throws HttpClientException {
         String ret = "";
@@ -180,13 +201,142 @@ public class HttpUtils {
             }
             return ret;
     }
-
     public static String doPostJson(String url,String jsonParam) throws HttpClientException {
         return doPostJson(url,jsonParam,null);
     }
+    public static String doPostByType(String contentType,String url,String Param) throws HttpClientException {
+        return doPostByType(contentType,url,Param,null);
+    }
 
-    public static String doPost(String url, Map<String, Object> params) throws HttpClientException {
-        return doPost(url,params,null);
+    public static String doPostByType(String contentType,String url,String jsonParam,Map<String,Object> header) throws HttpClientException {
+        String ret ="";
+        HttpPost post = new HttpPost(url);
+        post.setConfig(config);
+        post.addHeader(HTTP.CONTENT_ENCODING,"utf-8");
+        CloseableHttpResponse closeableHttpResponse =null;
+        StringEntity postEntity =null;
+        try {
+            if (jsonParam != null) {
+                postEntity = new StringEntity(jsonParam);
+                postEntity.setContentEncoding("UTF-8");
+                if(contentType.equals("json")){
+                    postEntity.setContentType("application/json");
+                }else if(contentType.equals("soap+xml")){
+                    postEntity.setContentType("application/soap+xml");
+                }
+
+                post.setEntity(postEntity);
+            }
+            if (header != null) {
+                for (Map.Entry<String, Object> entry : header.entrySet()) {
+                    post.setHeader(entry.getKey(), entry.getValue().toString());
+                }
+            }
+            closeableHttpResponse = httpclient.execute(post);
+            if (closeableHttpResponse.getStatusLine().getStatusCode() == 200) {
+                ret = EntityUtils.toString(closeableHttpResponse.getEntity(), "UTF-8");
+            } else {
+                throw new HttpClientException("System level error, Code=[" + closeableHttpResponse.getStatusLine().getStatusCode() + "].");
+            }
+        } catch (ClientProtocolException e) {
+            throw new HttpClientException("HttpClient error," + e.getMessage());
+        }catch (IOException e) {
+            throw new HttpClientException("IO error," + e.getMessage());
+        } finally {
+            try {
+                if(postEntity!=null) {
+                    EntityUtils.consume(postEntity);
+                }
+                if(closeableHttpResponse !=null){
+                    closeableHttpResponse.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return ret;
+    }
+
+
+    public static String doUpload(String url,File file){
+        return doUpload(url,file,null,null);
+    }
+    public static String doUpload(String url, File file,Map<String,Object> params,Map<String,Object> header){
+        String ret ="";
+        HttpPost post = new HttpPost(url);
+        post.setConfig(config);
+        post.addHeader(HTTP.CONTENT_ENCODING,"UTF-8");
+        CloseableHttpResponse response = null;
+        try {
+            MultipartEntityBuilder entityBuilder =  MultipartEntityBuilder.create();
+            entityBuilder.addBinaryBody("file",file);
+            if(params!=null){
+                for(Map.Entry<String,Object> entry:params.entrySet()){
+                    entityBuilder.addTextBody(entry.getKey(),entry.getValue().toString());
+                }
+            }
+            post.setEntity(entityBuilder.build());
+            if(header!=null){
+                for(Map.Entry<String,Object> entry:header.entrySet()){
+                    post.addHeader(entry.getKey(),entry.getValue().toString());
+                }
+            }
+
+            response = httpclient.execute(post);
+            if(response.getStatusLine().getStatusCode()==200){
+                ret = EntityUtils.toString(response.getEntity(),"utf-8");
+            }else{
+                throw new HttpClientException("System level error, Code=[" + response.getStatusLine().getStatusCode() + "].");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (HttpClientException e) {
+            e.printStackTrace();
+        }finally {
+            if(response!=null){
+                try {
+                    response.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return  ret;
+    }
+
+    public static void doDownload(String url,File descfile){
+        doDownload(url,descfile,null);
+    }
+    public static void doDownload(String url, File descfile,Map<String,Object> header){
+         HttpPost post = new HttpPost(url);
+        post.setConfig(config);
+        post.addHeader(HTTP.CONTENT_ENCODING,"UTF-8");
+        CloseableHttpResponse response = null;
+        try {
+            if(header!=null){
+                for(Map.Entry<String,Object> entry:header.entrySet()){
+                    post.addHeader(entry.getKey(),entry.getValue().toString());
+                }
+            }
+            response = httpclient.execute(post);
+            if(response.getStatusLine().getStatusCode()==200){
+                FileUtils.copyToFile(response.getEntity().getContent(),descfile);
+            }else{
+                throw new HttpClientException("System level error, Code=[" + response.getStatusLine().getStatusCode() + "].");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (HttpClientException e) {
+            e.printStackTrace();
+        }finally {
+            if(response!=null){
+                try {
+                    response.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
     public static void main(String[] args) {
         String result = null;
