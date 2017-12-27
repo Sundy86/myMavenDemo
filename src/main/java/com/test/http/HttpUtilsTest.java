@@ -13,7 +13,7 @@ import static com.test.http.HttpUtils.doPost;
 
 public class HttpUtilsTest {
     public static void main(String[] args) {
-        doPostJsonTest();
+        doUploadTest();
     }
     public static void doGetTest(){
         String result = null;
@@ -83,7 +83,7 @@ public class HttpUtilsTest {
         }
     }
     public static void doUploadTest(){
-        String url="http://123.58.251.183:8080/FileSever/upload.do";
+        String url="http://59.110.139.20:8080/FileSever/upload.do";
         String filePath = System.getProperty("user.dir")+ File.separator+"testdata"+File.separator;
         File file = new File(filePath+"test1.xml");
         String result = HttpUtils.doUpload(url,file);
@@ -92,7 +92,7 @@ public class HttpUtilsTest {
         JSONObject  object =JSON.parseObject(result);
         String fileId = object.getString("fileId");
         try {
-          String result2 =  HttpUtils.doGet("http://123.58.251.183:8080/FileSever/url.do?fileId="+fileId);
+          String result2 =  HttpUtils.doGet("http://59.110.139.20:8080/FileSever/url.do?fileId="+fileId);
           JSONObject object1 = JSON.parseObject(result2);
           String downloadUrl =  object1.getString("url");
           File file1 = new File(filePath+"test2.xml");
