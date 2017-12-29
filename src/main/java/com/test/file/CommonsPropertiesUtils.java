@@ -10,9 +10,10 @@ import java.util.List;
 
 public class CommonsPropertiesUtils {
     static  Configuration configuration;
-    public static Configuration getCommonsPropertis() {
+    public static Configuration getCommonsPropertis(String fileName) {
         try {
-            configuration = new PropertiesConfiguration("config.properties");
+            //configuration = new PropertiesConfiguration("config.properties");
+            configuration = new PropertiesConfiguration(fileName);
         } catch (ConfigurationException e) {
             e.printStackTrace();
         }

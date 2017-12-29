@@ -1,5 +1,6 @@
 package com.test.excel;
 
+import java.util.Date;
 import java.util.Map;
 
 import com.github.crab2died.annotation.ExcelField;
@@ -18,11 +19,20 @@ public class TestCase {
 	
 	 @ExcelField(title = "头部",order=2)
 	private String header;
+
+	@ExcelField(title = "当前时间", writeConverter = dateConverter.class)
+	 private Date dateTime;
 	
-	@ExcelField(title = "测试结果")
-	//@ExcelField(title = "测试结果", order=1, writeConverter = ResultWirteConverible.class)
+	@ExcelField(title = "测试结果", order=1, writeConverter = resultConverter.class)
 	private String result;
-	
+
+	public Date getDateTime() {
+		return dateTime;
+	}
+
+	public void setDateTime(Date dateTime) {
+		this.dateTime = dateTime;
+	}
 
 	public String getResult() {
 		return result;
@@ -66,8 +76,13 @@ public class TestCase {
 
 	@Override
 	public String toString() {
-		return "TestCase [type=" + type + ", url=" + url + ", params=" + params + ", header=" + header + ", result="
-				+ result + "]";
+		return "TestCase{" +
+				"type='" + type + '\'' +
+				", url='" + url + '\'' +
+				", params='" + params + '\'' +
+				", header='" + header + '\'' +
+				", dateTime=" + dateTime +
+				", result='" + result + '\'' +
+				'}';
 	}
-
 }
