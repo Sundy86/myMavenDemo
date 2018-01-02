@@ -11,5 +11,6 @@ public class EmailParams {
     public static final String password = file.getString("mail.password");
     public static final String title = file.getString("mail.title");
     public static final String[] tousers = file.getStringArray("mail.touser");
+    public static final String[] ccaddress = file.getStringArray("mail.ccaddress");
 
 }

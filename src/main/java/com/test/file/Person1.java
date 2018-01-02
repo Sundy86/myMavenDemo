@@ -1,7 +1,6 @@
 package com.test.file;
 
 import java.util.Set;
-
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElements;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -15,7 +14,6 @@ public class Person1 {
 	private String p2;
 	private String p3;
 	private String p4;
-	
 	private Set<Book> books;
 	
 	public Person1() {
@@ -26,13 +24,9 @@ public class Person1 {
 	public Set<Book> getBooks() {
 		return books;
 	}
-
 	public void setBooks(Set<Book> books) {
 		this.books = books;
 	}
-
-
-
 	public String getName() {
 		return name;
 	}

@@ -3,6 +3,7 @@ package com.test.file;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.DirectoryFileFilter;
 import java.io.*;
+import java.net.URL;
 import java.util.Iterator;
 import java.util.List;
 
@@ -97,13 +98,16 @@ public class FileUtilsTest {
         File sourcefile = new File("D:\\source\\pushClaim.xml");
         File targetfile = new File("C:\\target\\pc.xml");
         //将sourcefile中的文件内容移到targetfile的pc.xml文件中，source中的文件被移除，pc.xml是不存在的，移动时自动创健
-       // FileUtils.moveFile(sourcefile,targetfile);
+        FileUtils.moveFile(sourcefile,targetfile);
         //将sourcefile中的文件内容复制到targetfile的pc.xml文件中，pc.xml是不存在的，移动时自动创健
         File sourcefile1 = new File("D:\\source\\pushClaim.xml");
         File targetfile1 = new File("C:\\target\\pc1.xml");
-       // FileUtils.copyFile(sourcefile1,targetfile1,true);
+        FileUtils.copyFile(sourcefile1,targetfile1,true);
 
-
+        //拷贝文件到目录中
+        FileUtils.copyFileToDirectory(new File("d:/cxyapi.xml"), new File("d:/cxyapi"));
+        //拷贝url到文件
+        FileUtils.copyURLToFile(new URL("http://www.cxyapi.com/rss/cxyapi.xml"), new File("d:/cxyapi.xml"));
     }
 
     public static void writeORreadFile(){

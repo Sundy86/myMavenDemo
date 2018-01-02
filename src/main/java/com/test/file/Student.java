@@ -10,8 +10,6 @@ public class Student {
 	private String height;
 	private int age;
 	//private Set<Book> list;
-	
-	
 	public Student(String name, String width, String height, int age) {
 		super();
 		this.name = name;

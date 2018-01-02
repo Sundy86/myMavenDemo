@@ -1,8 +1,9 @@
 package com.test.email;
-import org.apache.commons.mail.EmailAttachment;
-import org.apache.commons.mail.EmailException;
-import org.apache.commons.mail.HtmlEmail;
+import org.apache.commons.mail.*;
+import org.apache.commons.mail.resolver.DataSourceUrlResolver;
 
+import javax.activation.DataSource;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -17,7 +18,6 @@ public class EmailUtils {
         for(String touser:toEmail){
             email.addTo(touser);//收件人
         }
-
         email.setSubject(title); //邮件标题
         email.setHtmlMsg(emailMsg);//邮件内容
         return email;
@@ -31,9 +31,7 @@ public class EmailUtils {
         for(String touser:toEmail){
             email.addTo(touser);//收件人
         }
-
         email.setSubject(title); //邮件标题
-
         return email;
     }
 
@@ -80,4 +78,6 @@ public class EmailUtils {
 
         email.send();
     }
+
+
 }
