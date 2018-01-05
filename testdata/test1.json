@@ -1,0 +1,1106 @@
+{
+  "claim": {
+    "accHistories": [
+      {
+        "claimNo": [
+          "lncl20170626050101"
+        ],
+        "dutyType": [
+          "02"
+        ],
+        "coverageName": [
+          "第三者责任险"
+        ],
+        "accidentNo": [
+          "lnacc2017062605"
+        ],
+        "lossVehicleType": [
+          "01"
+        ],
+        "plateNo": [
+          "京WQ3008"
+        ],
+        "caseStatus": [
+          "处理中"
+        ],
+        "damageSummary": [
+          "操作失误，碰擦"
+        ],
+        "totalEstimateAmount": [
+          "100000000.00"
+        ],
+        "commercialPaidAmount": [
+          "2000000.00"
+        ],
+        "damageDate": [
+          "2017-05-04T03:00:00.560+08:00"
+        ],
+        "compulsoryPolicyNo": [
+          "SHEN201311120001"
+        ],
+        "compulsoryPaidAmount": [
+          "3000000.00"
+        ],
+        "coverageCode": [
+          "10"
+        ]
+      }
+    ],
+    "accLossInfo": [
+      {
+        "dutyType": [
+          "02"
+        ],
+        "damageSite": [
+          "沂蒙路113号"
+        ],
+        "accidentNo": [
+          "lnacc2017062605"
+        ],
+        "dutyTypeRatio": [
+          "70.00"
+        ],
+        "damageReason": [
+          "21"
+        ],
+        "surveyMode": [
+          "01"
+        ],
+        "bodyInjuryFlag": [
+          "1"
+        ],
+        "damageDate": [
+          "2017-05-04T03:00:00.560+08:00"
+        ],
+        "accidentProcessDept": [
+          "05"
+        ],
+        "reportDate": [
+          "2017-05-04T17:32:33.561+08:00"
+        ],
+        "dutyCertType": [
+          "01"
+        ],
+        "accidentProcessMode": [
+          "02"
+        ],
+        "damageCourse": [
+          "操作失误，碰擦"
+        ]
+      }
+    ],
+    "surveyInfo": [
+      {
+        "surveyType": [
+          "01"
+        ],
+        "accidentType": [
+          "01"
+        ]
+      }
+    ],
+    "userAccount": [
+      "ln_test"
+    ],
+    "claimInfo": [
+      {
+        "claimNo": [
+          "lncl20170626050101"
+        ],
+        "tenementId": [
+          "0"
+        ],
+        "entrustLimitAmount": [
+          "100"
+        ],
+        "commercialPolicyNo": [
+          "Policy20161207002"
+        ],
+        "accidentNo": [
+          "lnacc2017062605"
+        ],
+        "claimSource": [
+          "1"
+        ],
+        "validFlag": [
+          "1"
+        ],
+        "transferNo": [
+          "0"
+        ],
+        "estimateCompanyId": [
+          "2366"
+        ],
+        "entrustFlag": [
+          "0"
+        ],
+        "quickCompensateFlag": [
+          "1"
+        ],
+        "bigCaseFlag": [
+          "0"
+        ],
+        "taskType": [
+          "01"
+        ],
+        "operableCompanyId": [
+          "2366"
+        ],
+        "claimCompanyId": [
+          "2366"
+        ],
+        "compulsoryPolicyNo": [
+          "Policy20161207001"
+        ],
+        "reportNo": [
+          "BA0001"
+        ]
+      }
+    ],
+    "accPolicies": [
+      {
+        "carownerZipCode": [
+          "226661"
+        ],
+        "carownerGender": [
+          "男"
+        ],
+        "vehicleAddDeviceFlag": [
+          "1"
+        ],
+        "accPolicyEndorses": [
+          {
+            "endorseEndDate": [
+              "2018-03-21T17:32:33.560+08:00"
+            ],
+            "endorseDate": [
+              "2017-05-21T17:32:33.560+08:00"
+            ],
+            "endorseNo": [
+              "PDH8888001"
+            ],
+            "endorseStartDate": [
+              "2017-05-21T17:32:33.560+08:00"
+            ],
+            "remark": [
+              "赛车事件，导致2人当场死亡，3人送至医院"
+            ],
+            "endorseType": [
+              "修改车牌号"
+            ],
+            "changeAmount": [
+              "100000.00"
+            ],
+            "endorseText": [
+              "从无车牌改为京WQ3008"
+            ],
+            "changePremium": [
+              "100000.00"
+            ],
+            "coverageCode": [
+              "10"
+            ]
+          }
+        ],
+        "insuredCardNo": [
+          "371312198401010078"
+        ],
+        "vehicleEngineCapacity": [
+          "10"
+        ],
+        "insuredTelNo": [
+          "13526597859"
+        ],
+        "circCommercialConfirmSeqNo": [
+          "businessConfirmSeqNo"
+        ],
+        "notFullAmountInsFlag": [
+          "1"
+        ],
+        "policyBusinessSource": [
+          "业务来源"
+        ],
+        "vehicleInvoiceDate": [
+          "2017-05-21T17:32:33.560+08:00"
+        ],
+        "policyNo": [
+          "Policy20161207001"
+        ],
+        "policyProposalDate": [
+          "2017-05-21T17:32:33.560+08:00"
+        ],
+        "carownerName": [
+          "李念儿"
+        ],
+        "policyIssuingDate": [
+          "2017-05-21T17:32:33.560+08:00"
+        ],
+        "insuredAge": [
+          "26"
+        ],
+        "appliTelNo": [
+          "88888888888"
+        ],
+        "vehicleSubModel": [
+          "卡罗拉 2008款 1.8L GL-S 自动 运动版"
+        ],
+        "appliFixedTelNo": [
+          "02188888888"
+        ],
+        "insuredName": [
+          "夏秋"
+        ],
+        "vehicleTransferRegisterDate": [
+          "2017-05-21T17:32:33.560+08:00"
+        ],
+        "vehicleVin": [
+          "LFV2B21K1D0904761"
+        ],
+        "carownerBusinessSort": [
+          "BusinessS"
+        ],
+        "vehicleFirstRegisterDate": [
+          "2017-05-21T17:32:33.560+08:00"
+        ],
+        "carownerCardType": [
+          "01"
+        ],
+        "carownerAddress": [
+          "临沂市北园路50号"
+        ],
+        "policySalesMan": [
+          "霍华德"
+        ],
+        "carownerType": [
+          "01"
+        ],
+        "insuredBusinessSort": [
+          "NBA"
+        ],
+        "policyEndDate": [
+          "2017-05-04T09:20:47.431+08:00"
+        ],
+        "vehicleBrandName": [
+          "01"
+        ],
+        "vehiclePoWeight": [
+          "10"
+        ],
+        "vehicleTrafficModelType": [
+          "trafficMod"
+        ],
+        "vehiclePlateType": [
+          "01"
+        ],
+        "accPolicyDrivers": [
+          {
+            "driverCardType": [
+              "01"
+            ],
+            "driverLicenseNo": [
+              "371312198401010078"
+            ],
+            "driverName": [
+              "夏秋"
+            ],
+            "driverCardNo": [
+              "371312198401010078"
+            ]
+          },
+          {
+            "driverCardType": [
+              "01"
+            ],
+            "driverLicenseNo": [
+              "371324196306110093"
+            ],
+            "driverName": [
+              "夏春"
+            ],
+            "driverCardNo": [
+              "371324196306110093"
+            ]
+          }
+        ],
+        "insuredCardType": [
+          "01"
+        ],
+        "notFullAmountInsRate": [
+          "10"
+        ],
+        "vehiclePlateColor": [
+          "01"
+        ],
+        "insuredFixedTelNo": [
+          "16236544896"
+        ],
+        "insuredAddress": [
+          "临沂市北园路50号"
+        ],
+        "circTransactionNo": [
+          "platTransactionNo"
+        ],
+        "appliCardType": [
+          "01"
+        ],
+        "vehicleImportFlag": [
+          "1"
+        ],
+        "appliAddress": [
+          "临沂市北园路50号"
+        ],
+        "vehicleKiloCount": [
+          "10"
+        ],
+        "insuredGender": [
+          "男"
+        ],
+        "policyCompanyName": [
+          "CIC"
+        ],
+        "vehicleCarKindCode": [
+          "01"
+        ],
+        "vehicleOwner": [
+          "owner"
+        ],
+        "vehicleUseNatureCode": [
+          "01"
+        ],
+        "vehicleLicenseModel": [
+          "licenseModel"
+        ],
+        "carownerCardNo": [
+          "371312198703090122"
+        ],
+        "carownerFixedTelNo": [
+          "2234212"
+        ],
+        "insuredType": [
+          "球员"
+        ],
+        "appliEmail": [
+          "kobe@sina.com"
+        ],
+        "insuredZipCode": [
+          "226661"
+        ],
+        "appliBusinessSort": [
+          "股份公司"
+        ],
+        "appliZipCode": [
+          "226661"
+        ],
+        "vehicleTrafficQueryNo": [
+          "trafficQueryNo"
+        ],
+        "vehicleLicenseCarKind": [
+          "lisCarKind"
+        ],
+        "vehicleSeatCount": [
+          "10"
+        ],
+        "insuredAmount": [
+          "100"
+        ],
+        "appliType": [
+          "创始人"
+        ],
+        "vehiclePurchasePrice": [
+          "18.8"
+        ],
+        "vehicleViolationRecord": [
+          "发生10次车祸"
+        ],
+        "carownerEmail": [
+          "carOwnerEmail@qq.com"
+        ],
+        "policyProposalNo": [
+          "TBDH8888001"
+        ],
+        "accPolicyCoverages": [
+          {
+            "insuredLiability": [
+              "110000.00"
+            ],
+            "deductibleRate": [
+              "0"
+            ],
+            "coverageName": [
+              "机动车交通事故责任强制保险"
+            ],
+            "deductibleAmount": [
+              "0.00"
+            ],
+            "endDate": [
+              "2017-05-21T17:32:33.560+08:00"
+            ],
+            "rate": [
+              "10"
+            ],
+            "planPremium": [
+              "950.00"
+            ],
+            "withoutDeductible": [
+              "无"
+            ],
+            "coverageCode": [
+              "0101"
+            ],
+            "startDate": [
+              "2017-05-21T17:32:33.560+08:00"
+            ]
+          }
+        ],
+        "vehiclePlateNo": [
+          "京WQ3008"
+        ],
+        "appliCardNo": [
+          "320654895621589875"
+        ],
+        "circPolicyConfirmSeqNo": [
+          "投保确认码"
+        ],
+        "appliName": [
+          "001"
+        ],
+        "circCommercialSeqNo": [
+          "businessSeqNo"
+        ],
+        "policyStartDate": [
+          "2017-05-07T17:32:33.560+08:00"
+        ],
+        "vehicleEngineNo": [
+          "FDJH001"
+        ],
+        "vehicleMileages": [
+          "1000"
+        ],
+        "circVehicleModelQueryNo": [
+          "modelQueryNo"
+        ],
+        "vehicleBodyColor": [
+          "黑色"
+        ],
+        "carownerTelNo": [
+          "456789012"
+        ],
+        "policySalesChannel": [
+          "人工"
+        ],
+        "insuredCareer": [
+          "职业篮球员"
+        ],
+        "insuredEmail": [
+          "qiaodan@sina.com"
+        ],
+        "policyType": [
+          "01"
+        ],
+        "carownerInsuredSameFlag": [
+          "1"
+        ],
+        "vehicleRunArea": [
+          "车道"
+        ],
+        "vehicleSubModelCode": [
+          "subModelCode"
+        ],
+        "carownerBirthday": [
+          "2017-05-21T17:32:33.560+08:00"
+        ]
+      },
+      {
+        "carownerZipCode": [
+          "226661"
+        ],
+        "carownerGender": [
+          "男"
+        ],
+        "vehicleAddDeviceFlag": [
+          "1"
+        ],
+        "accPolicyEndorses": [
+          {
+            "endorseEndDate": [
+              "2017-05-21T17:32:33.561+08:00"
+            ],
+            "endorseDate": [
+              "2017-05-21T17:32:33.561+08:00"
+            ],
+            "endorseNo": [
+              "PDH8888001"
+            ],
+            "endorseStartDate": [
+              "2017-05-21T17:32:33.561+08:00"
+            ],
+            "remark": [
+              "赛车事件，导致2人当场死亡，3人送至医院"
+            ],
+            "endorseType": [
+              "修改车牌号"
+            ],
+            "changeAmount": [
+              "100000.00"
+            ],
+            "endorseText": [
+              "从无车牌改为京WQ3008"
+            ],
+            "changePremium": [
+              "100000.00"
+            ],
+            "coverageCode": [
+              "10"
+            ]
+          }
+        ],
+        "insuredCardNo": [
+          "371312198401010078"
+        ],
+        "vehicleEngineCapacity": [
+          "10"
+        ],
+        "insuredTelNo": [
+          "13526597859"
+        ],
+        "circCommercialConfirmSeqNo": [
+          "businessConfirmSeqNo"
+        ],
+        "notFullAmountInsFlag": [
+          "1"
+        ],
+        "policyBusinessSource": [
+          "业务来源"
+        ],
+        "vehicleInvoiceDate": [
+          "2017-05-21T17:32:33.561+08:00"
+        ],
+        "policyNo": [
+          "Policy20161207001"
+        ],
+        "policyProposalDate": [
+          "2017-05-21T17:32:33.561+08:00"
+        ],
+        "carownerName": [
+          "李念儿"
+        ],
+        "policyIssuingDate": [
+          "2017-05-21T17:32:33.561+08:00"
+        ],
+        "insuredAge": [
+          "26"
+        ],
+        "appliTelNo": [
+          "88888888888"
+        ],
+        "vehicleSubModel": [
+          "嘉年华 两厢 2009款 1.3L 手动 经典版"
+        ],
+        "appliFixedTelNo": [
+          "02188888888"
+        ],
+        "insuredName": [
+          "夏秋"
+        ],
+        "vehicleTransferRegisterDate": [
+          "2017-05-21T17:32:33.561+08:00"
+        ],
+        "vehicleVin": [
+          "LFV2B21K1D0904761"
+        ],
+        "carownerBusinessSort": [
+          "BusinessS"
+        ],
+        "vehicleFirstRegisterDate": [
+          "2017-05-21T17:32:33.561+08:00"
+        ],
+        "carownerCardType": [
+          "01"
+        ],
+        "carownerAddress": [
+          "临沂市北园路50号"
+        ],
+        "policySalesMan": [
+          "霍华德"
+        ],
+        "carownerType": [
+          "carOwnerT"
+        ],
+        "insuredBusinessSort": [
+          "NBA"
+        ],
+        "policyEndDate": [
+          "2017-05-04T17:32:33.561+08:00"
+        ],
+        "vehicleBrandName": [
+          "01"
+        ],
+        "vehiclePoWeight": [
+          "10"
+        ],
+        "vehicleTrafficModelType": [
+          "trafficMod"
+        ],
+        "vehiclePlateType": [
+          "01"
+        ],
+        "accPolicyDrivers": [
+          {
+            "driverCardType": [
+              "01"
+            ],
+            "driverLicenseNo": [
+              "371312198401010078"
+            ],
+            "driverName": [
+              "夏秋"
+            ],
+            "driverCardNo": [
+              "371312198401010078"
+            ]
+          },
+          {
+            "driverCardType": [
+              "01"
+            ],
+            "driverLicenseNo": [
+              "371324196306110093"
+            ],
+            "driverName": [
+              "夏春"
+            ],
+            "driverCardNo": [
+              "371324196306110093"
+            ]
+          }
+        ],
+        "insuredCardType": [
+          "01"
+        ],
+        "notFullAmountInsRate": [
+          "10"
+        ],
+        "vehiclePlateColor": [
+          "01"
+        ],
+        "insuredFixedTelNo": [
+          "16236544896"
+        ],
+        "insuredAddress": [
+          "临沂市北园路50号"
+        ],
+        "circTransactionNo": [
+          "platTransactionNo"
+        ],
+        "appliCardType": [
+          "01"
+        ],
+        "vehicleImportFlag": [
+          "1"
+        ],
+        "appliAddress": [
+          "上海市徐汇区龙漕路28号"
+        ],
+        "vehicleKiloCount": [
+          "10"
+        ],
+        "insuredGender": [
+          "男"
+        ],
+        "policyCompanyName": [
+          "CIC"
+        ],
+        "vehicleCarKindCode": [
+          "01"
+        ],
+        "vehicleOwner": [
+          "owner"
+        ],
+        "vehicleUseNatureCode": [
+          "01"
+        ],
+        "vehicleLicenseModel": [
+          "licenseModel"
+        ],
+        "carownerCardNo": [
+          "371312198703090122"
+        ],
+        "carownerFixedTelNo": [
+          "2234212"
+        ],
+        "insuredType": [
+          "球员"
+        ],
+        "appliEmail": [
+          "kobe@sina.com"
+        ],
+        "insuredZipCode": [
+          "226661"
+        ],
+        "appliBusinessSort": [
+          "股份公司"
+        ],
+        "appliZipCode": [
+          "226661"
+        ],
+        "vehicleTrafficQueryNo": [
+          "trafficQueryNo"
+        ],
+        "vehicleLicenseCarKind": [
+          "lisCarKind"
+        ],
+        "vehicleSeatCount": [
+          "10"
+        ],
+        "insuredAmount": [
+          "100"
+        ],
+        "appliType": [
+          "创始人"
+        ],
+        "vehiclePurchasePrice": [
+          "18.8"
+        ],
+        "vehicleViolationRecord": [
+          "发生10次车祸"
+        ],
+        "carownerEmail": [
+          "carOwnerEmail@qq.com"
+        ],
+        "policyProposalNo": [
+          "TBDH8888001"
+        ],
+        "accPolicyCoverages": [
+          {
+            "insuredLiability": [
+              "2000000.00"
+            ],
+            "deductibleRate": [
+              "0"
+            ],
+            "coverageName": [
+              "机动车损失保险"
+            ],
+            "deductibleAmount": [
+              "0.00"
+            ],
+            "endDate": [
+              "2017-05-21T17:32:33.561+08:00"
+            ],
+            "rate": [
+              "10"
+            ],
+            "planPremium": [
+              "12000.00"
+            ],
+            "withoutDeductible": [
+              "无"
+            ],
+            "coverageCode": [
+              "01"
+            ],
+            "startDate": [
+              "2017-05-21T17:32:33.561+08:00"
+            ]
+          }
+        ],
+        "vehiclePlateNo": [
+          "京WQ3008"
+        ],
+        "appliCardNo": [
+          "320654895621589875"
+        ],
+        "circPolicyConfirmSeqNo": [
+          "投保确认码"
+        ],
+        "appliName": [
+          "001"
+        ],
+        "circCommercialSeqNo": [
+          "businessSeqNo"
+        ],
+        "policyStartDate": [
+          "2017-05-07T17:32:33.561+08:00"
+        ],
+        "vehicleEngineNo": [
+          "FDJH001"
+        ],
+        "vehicleMileages": [
+          "1000"
+        ],
+        "circVehicleModelQueryNo": [
+          "modelQueryNo"
+        ],
+        "vehicleBodyColor": [
+          "黑色"
+        ],
+        "carownerTelNo": [
+          "456789012"
+        ],
+        "policySalesChannel": [
+          "人工"
+        ],
+        "insuredCareer": [
+          "职业篮球员"
+        ],
+        "insuredEmail": [
+          "qiaodan@sina.com"
+        ],
+        "policyType": [
+          "02"
+        ],
+        "carownerInsuredSameFlag": [
+          "1"
+        ],
+        "vehicleRunArea": [
+          "车道"
+        ],
+        "vehicleSubModelCode": [
+          "subModelCode"
+        ],
+        "carownerBirthday": [
+          "2017-05-21T17:32:33.561+08:00"
+        ]
+      }
+    ],
+    "survey": [
+      {
+        "commercialPolicyNo": [
+          "Policy20161207002"
+        ],
+        "accidentNo": [
+          "lnacc2017062605"
+        ],
+        "assignDate": [
+          "2017-05-04T09:20:47.431+08:00"
+        ],
+        "surveySource": [
+          "1"
+        ],
+        "validFlag": [
+          "1"
+        ],
+        "surveyCompanyId": [
+          "2366"
+        ],
+        "reportDate": [
+          "2017-01-08T17:22:23.543+08:00"
+        ],
+        "claimCompanyId": [
+          "2366"
+        ],
+        "firstAssignDate": [
+          "2017-05-04T09:20:47.431+08:00"
+        ],
+        "compulsoryPolicyNo": [
+          "Policy20161207001"
+        ],
+        "insuredName": [
+          "冷文卿"
+        ],
+        "attachmentSystem": [
+          "01"
+        ],
+        "insuredLevel": [
+          "01"
+        ],
+        "reportNo": [
+          "BA0001"
+        ]
+      }
+    ],
+    "vehicleBaseInfo": [
+      {
+        "lossVehicleType": [
+          "01"
+        ],
+        "plateNo": [
+          "京WQ3008"
+        ]
+      },
+      {
+        "engineNo": [
+          "1111"
+        ],
+        "lossVehicleType": [
+          "01"
+        ],
+        "plateNo": [
+          "京WQ3008"
+        ],
+        "plateType": [
+          "01"
+        ],
+        "licenseFirstRegisterDate": [
+          "2017-05-21T09:20:47.431+08:00"
+        ],
+        "brandModel": [
+          "FV7184"
+        ],
+        "purchasePrice": [
+          "18.8"
+        ],
+        "vehicleCategory": [
+          "01"
+        ],
+        "plateColorId": [
+          "01"
+        ],
+        "usingType": [
+          "01"
+        ],
+        "vin": [
+          "LFV2B21K1D0904789"
+        ],
+        "currentValue": [
+          "18.8"
+        ],
+        "vehicleBodyColorId": [
+          "01"
+        ]
+      }
+    ],
+    "needValidation": [
+      "0"
+    ],
+    "accident": [
+      {
+        "agent": [
+          "报案代理人"
+        ],
+        "policyCompanyName": [
+          "CIC"
+        ],
+        "accidentNo": [
+          "lnacc2017062605"
+        ],
+        "relToInsured": [
+          "04"
+        ],
+        "damageSiteType": [
+          "14"
+        ],
+        "damageReason": [
+          "21"
+        ],
+        "surveyMode": [
+          "01"
+        ],
+        "accidentSection": [
+          "01"
+        ],
+        "accidentReason": [
+          "21"
+        ],
+        "bodyInjuryFlag": [
+          "0"
+        ],
+        "damageDate": [
+          "2017-05-04T03:00:00.560+08:00"
+        ],
+        "greatCaseFlag": [
+          "1"
+        ],
+        "reportDate": [
+          "2017-05-04T09:20:47.431+08:00"
+        ],
+        "reporterFixedTelNo": [
+          "12345678"
+        ],
+        "weather": [
+          "阴"
+        ],
+        "accidentProcessMode": [
+          "02"
+        ],
+        "insuredName": [
+          "顾子言"
+        ],
+        "compulsorySelfPayFlag": [
+          "1"
+        ],
+        "reportNo": [
+          "BA0001"
+        ],
+        "reporterTelNo": [
+          "18611227899"
+        ],
+        "surveyType": [
+          "01"
+        ],
+        "damageSite": [
+          "沂蒙路113号"
+        ],
+        "acceptor": [
+          "奥拉朱旺"
+        ],
+        "contactName": [
+          "ContactName"
+        ],
+        "contactMobileNo": [
+          "155555555555"
+        ],
+        "reportLossAmount": [
+          "10000.00"
+        ],
+        "businessNature": [
+          "业务来源"
+        ],
+        "insuredMobileNo": [
+          "155555555555"
+        ],
+        "reporter": [
+          "阚小美"
+        ],
+        "accidentCourse": [
+          "操作失误，碰擦"
+        ],
+        "damageArea": [
+          "01"
+        ],
+        "accidentProcessDept": [
+          "05"
+        ],
+        "claimCompanyName": [
+          "案件处理机构"
+        ],
+        "reportFirstPlaceFlag": [
+          "1"
+        ],
+        "contactTelNo": [
+          "155555555555"
+        ],
+        "insuredPhoneNo": [
+          "18644557899"
+        ],
+        "estimateSite": [
+          "沂蒙路113号"
+        ],
+        "selfClaimFlag": [
+          "0"
+        ]
+      }
+    ],
+    "claimStatus": [
+      "01"
+    ],
+    "claimVehicleLossInfos": [
+      {
+        "collisionPoint": [
+          "1M"
+        ],
+        "mainCollisionPointFlag": [
+          "1"
+        ]
+      },
+      {
+        "collisionPoint": [
+          "3R"
+        ],
+        "mainCollisionPointFlag": [
+          "0"
+        ]
+      }
+    ]
+  }
+}

@@ -1,71 +1,59 @@
- 
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-   <soap:Header>
-      <wsse:Security soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
-         <wsse:UsernameToken wsu:Id="UsernameToken-1">
-            <wsse:Username>cxf</wsse:Username>
-            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
-         </wsse:UsernameToken>
-      </wsse:Security>
-   </soap:Header>
-   <soap:Body>
-      <ns2:pushClaim xmlns:ns2="http://inbound.template.interfaces.cccis.com/">
-         <arg0><![CDATA[<claim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="vehicleClaimRequestTmp">
+<claim>
 <accHistories>
-<accidentNo>=accidentNo=</accidentNo>
-<caseStatus>´¦ÀíÖÐ</caseStatus>
-<claimNo>=claimNo=</claimNo>
+<accidentNo>lnacc2017062605</accidentNo>
+<caseStatus>å¤„ç†ä¸­</caseStatus>
+<claimNo>lncl20170626050101</claimNo>
 <commercialPaidAmount>2000000.00</commercialPaidAmount>
 <compulsoryPaidAmount>3000000.00</compulsoryPaidAmount>
 <compulsoryPolicyNo>SHEN201311120001</compulsoryPolicyNo>
 <coverageCode>10</coverageCode>
-<coverageName>µÚÈýÕßÔðÈÎÏÕ</coverageName>
-<damageDate>2017-09-31T03:00:00.560+08:00</damageDate>
-<damageSummary>²Ù×÷Ê§Îó£¬Åö²Á</damageSummary>
-<dutyType>02</dutyType>	
-<lossVehicleType>=lossVehicleType=</lossVehicleType>
-<plateNo>»¦A12345</plateNo>
+<coverageName>ç¬¬ä¸‰è€…è´£ä»»é™©</coverageName>
+<damageDate>2017-05-04T03:00:00.560+08:00</damageDate>
+<damageSummary>æ“ä½œå¤±è¯¯ï¼Œç¢°æ“¦</damageSummary>
+<dutyType>02</dutyType>
+<lossVehicleType>01</lossVehicleType>
+<plateNo>äº¬WQ3008</plateNo>
 <totalEstimateAmount>100000000.00</totalEstimateAmount>
 </accHistories>
 <accLossInfo>
-<accidentNo>=accidentNo=</accidentNo>
+<accidentNo>lnacc2017062605</accidentNo>
 <accidentProcessDept>05</accidentProcessDept>
 <accidentProcessMode>02</accidentProcessMode>
 <bodyInjuryFlag>1</bodyInjuryFlag>
-<damageCourse>²Ù×÷Ê§Îó£¬Åö²Á</damageCourse>
-<damageDate>2017-09-31T03:00:00.560+08:00</damageDate>
+<damageCourse>æ“ä½œå¤±è¯¯ï¼Œç¢°æ“¦</damageCourse>
+<damageDate>2017-05-04T03:00:00.560+08:00</damageDate>
 <damageReason>21</damageReason>
-<damageSite>ÒÊÃÉÂ·113ºÅ</damageSite>
+<damageSite>æ²‚è’™è·¯113å·</damageSite>
 <dutyCertType>01</dutyCertType>
 <dutyType>02</dutyType>
 <dutyTypeRatio>70.00</dutyTypeRatio>
-<reportDate>2017-09-31T17:32:33.561+08:00</reportDate>
+<reportDate>2017-05-04T17:32:33.561+08:00</reportDate>
 <surveyMode>01</surveyMode>
 </accLossInfo>
 <accPolicies>
 <accPolicyCoverages>
 <coverageCode>0101</coverageCode>
-<coverageName>»ú¶¯³µ½»Í¨ÊÂ¹ÊÔðÈÎÇ¿ÖÆ±£ÏÕ</coverageName>
+<coverageName>æœºåŠ¨è½¦äº¤é€šäº‹æ•…è´£ä»»å¼ºåˆ¶ä¿é™©</coverageName>
 <deductibleAmount>0.00</deductibleAmount>
 <deductibleRate>0</deductibleRate>
-<endDate>2018-03-31T17:32:33.560+08:00</endDate>
+<endDate>2017-05-21T17:32:33.560+08:00</endDate>
 <insuredLiability>110000.00</insuredLiability>
 <planPremium>950.00</planPremium>
 <rate>10</rate>
-<startDate>2017-01-01T17:32:33.560+08:00</startDate>
-<withoutDeductible>ÎÞ</withoutDeductible>
+<startDate>2017-05-21T17:32:33.560+08:00</startDate>
+<withoutDeductible>æ— </withoutDeductible>
 </accPolicyCoverages>
 <accPolicyDrivers>
 <driverCardNo>371312198401010078</driverCardNo>
 <driverCardType>01</driverCardType>
 <driverLicenseNo>371312198401010078</driverLicenseNo>
-<driverName>ÏÄÇï</driverName>
+<driverName>å¤ç§‹</driverName>
 </accPolicyDrivers>
 <accPolicyDrivers>
 <driverCardNo>371324196306110093</driverCardNo>
 <driverCardType>01</driverCardType>
 <driverLicenseNo>371324196306110093</driverLicenseNo>
-<driverName>ÏÄ´º</driverName>
+<driverName>å¤æ˜¥</driverName>
 </accPolicyDrivers>
 <accPolicyEndorses>
 <changeAmount>100000.00</changeAmount>
@@ -75,68 +63,68 @@
 <endorseEndDate>2018-03-21T17:32:33.560+08:00</endorseEndDate>
 <endorseNo>PDH8888001</endorseNo>
 <endorseStartDate>2017-05-21T17:32:33.560+08:00</endorseStartDate>
-<endorseText>´ÓÎÞ³µÅÆ¸ÄÎªÂ³QA3001</endorseText>
-<endorseType>ÐÞ¸Ä³µÅÆºÅ</endorseType>
-<remark>Èü³µÊÂ¼þ£¬µ¼ÖÂ2ÈËµ±³¡ËÀÍö£¬3ÈËËÍÖÁÒ½Ôº</remark>
+<endorseText>ä»Žæ— è½¦ç‰Œæ”¹ä¸ºäº¬WQ3008</endorseText>
+<endorseType>ä¿®æ”¹è½¦ç‰Œå·</endorseType>
+<remark>èµ›è½¦äº‹ä»¶ï¼Œå¯¼è‡´2äººå½“åœºæ­»äº¡ï¼Œ3äººé€è‡³åŒ»é™¢</remark>
 </accPolicyEndorses>
-<appliAddress>ÁÙÒÊÊÐ±±Ô°Â·50ºÅ</appliAddress>
-<appliBusinessSort>¹É·Ý¹«Ë¾</appliBusinessSort>
+<appliAddress>ä¸´æ²‚å¸‚åŒ—å›­è·¯50å·</appliAddress>
+<appliBusinessSort>è‚¡ä»½å…¬å¸</appliBusinessSort>
 <appliCardNo>320654895621589875</appliCardNo>
 <appliCardType>01</appliCardType>
 <appliEmail>kobe@sina.com</appliEmail>
 <appliFixedTelNo>02188888888</appliFixedTelNo>
 <appliName>001</appliName>
 <appliTelNo>88888888888</appliTelNo>
-<appliType>´´Ê¼ÈË</appliType>
+<appliType>åˆ›å§‹äºº</appliType>
 <appliZipCode>226661</appliZipCode>
-<carownerAddress>ÁÙÒÊÊÐ±±Ô°Â·50ºÅ</carownerAddress>
+<carownerAddress>ä¸´æ²‚å¸‚åŒ—å›­è·¯50å·</carownerAddress>
 <carownerBirthday>2017-05-21T17:32:33.560+08:00</carownerBirthday>
 <carownerBusinessSort>BusinessS</carownerBusinessSort>
 <carownerCardNo>371312198703090122</carownerCardNo>
 <carownerCardType>01</carownerCardType>
 <carownerEmail>carOwnerEmail@qq.com</carownerEmail>
 <carownerFixedTelNo>2234212</carownerFixedTelNo>
-<carownerGender>ÄÐ</carownerGender>
+<carownerGender>ç”·</carownerGender>
 <carownerInsuredSameFlag>1</carownerInsuredSameFlag>
-<carownerName>ÀîÄî¶ù</carownerName>
+<carownerName>æŽå¿µå„¿</carownerName>
 <carownerTelNo>456789012</carownerTelNo>
 <carownerType>01</carownerType>
 <carownerZipCode>226661</carownerZipCode>
 <circCommercialConfirmSeqNo>businessConfirmSeqNo</circCommercialConfirmSeqNo>
 <circCommercialSeqNo>businessSeqNo</circCommercialSeqNo>
-<circPolicyConfirmSeqNo>Í¶±£È·ÈÏÂë</circPolicyConfirmSeqNo>
+<circPolicyConfirmSeqNo>æŠ•ä¿ç¡®è®¤ç </circPolicyConfirmSeqNo>
 <circTransactionNo>platTransactionNo</circTransactionNo>
 <circVehicleModelQueryNo>modelQueryNo</circVehicleModelQueryNo>
-<insuredAddress>ÁÙÒÊÊÐ±±Ô°Â·50ºÅ</insuredAddress>
+<insuredAddress>ä¸´æ²‚å¸‚åŒ—å›­è·¯50å·</insuredAddress>
 <insuredAge>26</insuredAge>
 <insuredAmount>100</insuredAmount>
 <insuredBusinessSort>NBA</insuredBusinessSort>
 <insuredCardNo>371312198401010078</insuredCardNo>
 <insuredCardType>01</insuredCardType>
-<insuredCareer>Ö°ÒµÀºÇòÔ±</insuredCareer>
+<insuredCareer>èŒä¸šç¯®çƒå‘˜</insuredCareer>
 <insuredEmail>qiaodan@sina.com</insuredEmail>
 <insuredFixedTelNo>16236544896</insuredFixedTelNo>
-<insuredGender>ÄÐ</insuredGender>
-<insuredName>ÏÄÇï</insuredName>
+<insuredGender>ç”·</insuredGender>
+<insuredName>å¤ç§‹</insuredName>
 <insuredTelNo>13526597859</insuredTelNo>
-<insuredType>ÇòÔ±</insuredType>
+<insuredType>çƒå‘˜</insuredType>
 <insuredZipCode>226661</insuredZipCode>
 <notFullAmountInsFlag>1</notFullAmountInsFlag>
 <notFullAmountInsRate>10</notFullAmountInsRate>
-<policyBusinessSource>ÒµÎñÀ´Ô´</policyBusinessSource>
+<policyBusinessSource>ä¸šåŠ¡æ¥æº</policyBusinessSource>
 <policyCompanyName>CIC</policyCompanyName>
-<policyEndDate>2017-08-20T03:00:47.431+08:00</policyEndDate>
+<policyEndDate>2017-05-04T09:20:47.431+08:00</policyEndDate>
 <policyIssuingDate>2017-05-21T17:32:33.560+08:00</policyIssuingDate>
 <policyNo>Policy20161207001</policyNo>
 <policyProposalDate>2017-05-21T17:32:33.560+08:00</policyProposalDate>
 <policyProposalNo>TBDH8888001</policyProposalNo>
-<policySalesChannel>ÈË¹¤</policySalesChannel>
-<policySalesMan>»ô»ªµÂ</policySalesMan>
+<policySalesChannel>äººå·¥</policySalesChannel>
+<policySalesMan>éœåŽå¾·</policySalesMan>
 <policySpecialAgreement></policySpecialAgreement>
 <policyStartDate>2017-05-07T17:32:33.560+08:00</policyStartDate>
 <policyType>01</policyType>
 <vehicleAddDeviceFlag>1</vehicleAddDeviceFlag>
-<vehicleBodyColor>ºÚÉ«</vehicleBodyColor>
+<vehicleBodyColor>é»‘è‰²</vehicleBodyColor>
 <vehicleBrandName>01</vehicleBrandName>
 <vehicleCarKindCode>01</vehicleCarKindCode>
 <vehicleEngineCapacity>10</vehicleEngineCapacity>
@@ -150,45 +138,45 @@
 <vehicleMileages>1000</vehicleMileages>
 <vehicleOwner>owner</vehicleOwner>
 <vehiclePlateColor>01</vehiclePlateColor>
-<vehiclePlateNo>»¦A12345</vehiclePlateNo>
+<vehiclePlateNo>äº¬WQ3008</vehiclePlateNo>
 <vehiclePlateType>01</vehiclePlateType>
 <vehiclePoWeight>10</vehiclePoWeight>
 <vehiclePurchasePrice>18.8</vehiclePurchasePrice>
-<vehicleRunArea>³µµÀ</vehicleRunArea>
+<vehicleRunArea>è½¦é“</vehicleRunArea>
 <vehicleSeatCount>10</vehicleSeatCount>
-<vehicleSubModel>¿¨ÂÞÀ­ 2008¿î 1.8L GL-S ×Ô¶¯ ÔË¶¯°æ</vehicleSubModel>
+<vehicleSubModel>å¡ç½—æ‹‰ 2008æ¬¾ 1.8L GL-S è‡ªåŠ¨ è¿åŠ¨ç‰ˆ</vehicleSubModel>
 <vehicleSubModelCode>subModelCode</vehicleSubModelCode>
 <vehicleTrafficModelType>trafficMod</vehicleTrafficModelType>
 <vehicleTrafficQueryNo>trafficQueryNo</vehicleTrafficQueryNo>
 <vehicleTransferRegisterDate>2017-05-21T17:32:33.560+08:00</vehicleTransferRegisterDate>
 <vehicleUseNatureCode>01</vehicleUseNatureCode>
-<vehicleVin>VF7N0RFN18AF58465</vehicleVin>
-<vehicleViolationRecord>·¢Éú10´Î³µ»ö</vehicleViolationRecord>
+<vehicleVin>LFV2B21K1D0904761</vehicleVin>
+<vehicleViolationRecord>å‘ç”Ÿ10æ¬¡è½¦ç¥¸</vehicleViolationRecord>
 </accPolicies>
 <accPolicies>
 <accPolicyCoverages>
 <coverageCode>01</coverageCode>
-<coverageName>»ú¶¯³µËðÊ§±£ÏÕ</coverageName>
+<coverageName>æœºåŠ¨è½¦æŸå¤±ä¿é™©</coverageName>
 <deductibleAmount>0.00</deductibleAmount>
 <deductibleRate>0</deductibleRate>
-<endDate>2017-08-20T03:00:00.561+08:00</endDate>
+<endDate>2017-05-21T17:32:33.561+08:00</endDate>
 <insuredLiability>2000000.00</insuredLiability>
 <planPremium>12000.00</planPremium>
 <rate>10</rate>
 <startDate>2017-05-21T17:32:33.561+08:00</startDate>
-<withoutDeductible>ÎÞ</withoutDeductible>
+<withoutDeductible>æ— </withoutDeductible>
 </accPolicyCoverages>
 <accPolicyDrivers>
 <driverCardNo>371312198401010078</driverCardNo>
 <driverCardType>01</driverCardType>
 <driverLicenseNo>371312198401010078</driverLicenseNo>
-<driverName>ÏÄÇï</driverName>
+<driverName>å¤ç§‹</driverName>
 </accPolicyDrivers>
 <accPolicyDrivers>
 <driverCardNo>371324196306110093</driverCardNo>
 <driverCardType>01</driverCardType>
 <driverLicenseNo>371324196306110093</driverLicenseNo>
-<driverName>ÏÄ´º</driverName>
+<driverName>å¤æ˜¥</driverName>
 </accPolicyDrivers>
 <accPolicyEndorses>
 <changeAmount>100000.00</changeAmount>
@@ -198,68 +186,68 @@
 <endorseEndDate>2017-05-21T17:32:33.561+08:00</endorseEndDate>
 <endorseNo>PDH8888001</endorseNo>
 <endorseStartDate>2017-05-21T17:32:33.561+08:00</endorseStartDate>
-<endorseText>´ÓÎÞ³µÅÆ¸ÄÎªÂ³QA3001</endorseText>
-<endorseType>ÐÞ¸Ä³µÅÆºÅ</endorseType>
-<remark>Èü³µÊÂ¼þ£¬µ¼ÖÂ2ÈËµ±³¡ËÀÍö£¬3ÈËËÍÖÁÒ½Ôº</remark>
+<endorseText>ä»Žæ— è½¦ç‰Œæ”¹ä¸ºäº¬WQ3008</endorseText>
+<endorseType>ä¿®æ”¹è½¦ç‰Œå·</endorseType>
+<remark>èµ›è½¦äº‹ä»¶ï¼Œå¯¼è‡´2äººå½“åœºæ­»äº¡ï¼Œ3äººé€è‡³åŒ»é™¢</remark>
 </accPolicyEndorses>
-<appliAddress>ÉÏº£ÊÐÐì»ãÇøÁúäîÂ·28ºÅ</appliAddress>
-<appliBusinessSort>¹É·Ý¹«Ë¾</appliBusinessSort>
+<appliAddress>ä¸Šæµ·å¸‚å¾æ±‡åŒºé¾™æ¼•è·¯28å·</appliAddress>
+<appliBusinessSort>è‚¡ä»½å…¬å¸</appliBusinessSort>
 <appliCardNo>320654895621589875</appliCardNo>
 <appliCardType>01</appliCardType>
 <appliEmail>kobe@sina.com</appliEmail>
 <appliFixedTelNo>02188888888</appliFixedTelNo>
 <appliName>001</appliName>
 <appliTelNo>88888888888</appliTelNo>
-<appliType>´´Ê¼ÈË</appliType>
+<appliType>åˆ›å§‹äºº</appliType>
 <appliZipCode>226661</appliZipCode>
-<carownerAddress>ÁÙÒÊÊÐ±±Ô°Â·50ºÅ</carownerAddress>
+<carownerAddress>ä¸´æ²‚å¸‚åŒ—å›­è·¯50å·</carownerAddress>
 <carownerBirthday>2017-05-21T17:32:33.561+08:00</carownerBirthday>
 <carownerBusinessSort>BusinessS</carownerBusinessSort>
 <carownerCardNo>371312198703090122</carownerCardNo>
 <carownerCardType>01</carownerCardType>
 <carownerEmail>carOwnerEmail@qq.com</carownerEmail>
 <carownerFixedTelNo>2234212</carownerFixedTelNo>
-<carownerGender>ÄÐ</carownerGender>
+<carownerGender>ç”·</carownerGender>
 <carownerInsuredSameFlag>1</carownerInsuredSameFlag>
-<carownerName>ÀîÄî¶ù</carownerName>
+<carownerName>æŽå¿µå„¿</carownerName>
 <carownerTelNo>456789012</carownerTelNo>
 <carownerType>carOwnerT</carownerType>
 <carownerZipCode>226661</carownerZipCode>
 <circCommercialConfirmSeqNo>businessConfirmSeqNo</circCommercialConfirmSeqNo>
 <circCommercialSeqNo>businessSeqNo</circCommercialSeqNo>
-<circPolicyConfirmSeqNo>Í¶±£È·ÈÏÂë</circPolicyConfirmSeqNo>
+<circPolicyConfirmSeqNo>æŠ•ä¿ç¡®è®¤ç </circPolicyConfirmSeqNo>
 <circTransactionNo>platTransactionNo</circTransactionNo>
 <circVehicleModelQueryNo>modelQueryNo</circVehicleModelQueryNo>
-<insuredAddress>ÁÙÒÊÊÐ±±Ô°Â·50ºÅ</insuredAddress>
+<insuredAddress>ä¸´æ²‚å¸‚åŒ—å›­è·¯50å·</insuredAddress>
 <insuredAge>26</insuredAge>
 <insuredAmount>100</insuredAmount>
 <insuredBusinessSort>NBA</insuredBusinessSort>
 <insuredCardNo>371312198401010078</insuredCardNo>
 <insuredCardType>01</insuredCardType>
-<insuredCareer>Ö°ÒµÀºÇòÔ±</insuredCareer>
+<insuredCareer>èŒä¸šç¯®çƒå‘˜</insuredCareer>
 <insuredEmail>qiaodan@sina.com</insuredEmail>
 <insuredFixedTelNo>16236544896</insuredFixedTelNo>
-<insuredGender>ÄÐ</insuredGender>
-<insuredName>ÏÄÇï</insuredName>
+<insuredGender>ç”·</insuredGender>
+<insuredName>å¤ç§‹</insuredName>
 <insuredTelNo>13526597859</insuredTelNo>
-<insuredType>ÇòÔ±</insuredType>
+<insuredType>çƒå‘˜</insuredType>
 <insuredZipCode>226661</insuredZipCode>
 <notFullAmountInsFlag>1</notFullAmountInsFlag>
 <notFullAmountInsRate>10</notFullAmountInsRate>
-<policyBusinessSource>ÒµÎñÀ´Ô´</policyBusinessSource>
+<policyBusinessSource>ä¸šåŠ¡æ¥æº</policyBusinessSource>
 <policyCompanyName>CIC</policyCompanyName>
-<policyEndDate>2017-08-20T03:00:00.561+08:00</policyEndDate>
+<policyEndDate>2017-05-04T17:32:33.561+08:00</policyEndDate>
 <policyIssuingDate>2017-05-21T17:32:33.561+08:00</policyIssuingDate>
 <policyNo>Policy20161207001</policyNo>
 <policyProposalDate>2017-05-21T17:32:33.561+08:00</policyProposalDate>
 <policyProposalNo>TBDH8888001</policyProposalNo>
-<policySalesChannel>ÈË¹¤</policySalesChannel>
-<policySalesMan>»ô»ªµÂ</policySalesMan>
+<policySalesChannel>äººå·¥</policySalesChannel>
+<policySalesMan>éœåŽå¾·</policySalesMan>
 <policySpecialAgreement></policySpecialAgreement>
 <policyStartDate>2017-05-07T17:32:33.561+08:00</policyStartDate>
 <policyType>02</policyType>
 <vehicleAddDeviceFlag>1</vehicleAddDeviceFlag>
-<vehicleBodyColor>ºÚÉ«</vehicleBodyColor>
+<vehicleBodyColor>é»‘è‰²</vehicleBodyColor>
 <vehicleBrandName>01</vehicleBrandName>
 <vehicleCarKindCode>01</vehicleCarKindCode>
 <vehicleEngineCapacity>10</vehicleEngineCapacity>
@@ -273,72 +261,72 @@
 <vehicleMileages>1000</vehicleMileages>
 <vehicleOwner>owner</vehicleOwner>
 <vehiclePlateColor>01</vehiclePlateColor>
-<vehiclePlateNo>»¦A12345</vehiclePlateNo>
+<vehiclePlateNo>äº¬WQ3008</vehiclePlateNo>
 <vehiclePlateType>01</vehiclePlateType>
 <vehiclePoWeight>10</vehiclePoWeight>
 <vehiclePurchasePrice>18.8</vehiclePurchasePrice>
-<vehicleRunArea>³µµÀ</vehicleRunArea>
+<vehicleRunArea>è½¦é“</vehicleRunArea>
 <vehicleSeatCount>10</vehicleSeatCount>
-<vehicleSubModel>¼ÎÄê»ª Á½Ïá 2009¿î 1.3L ÊÖ¶¯ ¾­µä°æ</vehicleSubModel>
+<vehicleSubModel>å˜‰å¹´åŽ ä¸¤åŽ¢ 2009æ¬¾ 1.3L æ‰‹åŠ¨ ç»å…¸ç‰ˆ</vehicleSubModel>
 <vehicleSubModelCode>subModelCode</vehicleSubModelCode>
 <vehicleTrafficModelType>trafficMod</vehicleTrafficModelType>
 <vehicleTrafficQueryNo>trafficQueryNo</vehicleTrafficQueryNo>
 <vehicleTransferRegisterDate>2017-05-21T17:32:33.561+08:00</vehicleTransferRegisterDate>
 <vehicleUseNatureCode>01</vehicleUseNatureCode>
-<vehicleVin>VF7N0RFN18AF58465</vehicleVin>
-<vehicleViolationRecord>·¢Éú10´Î³µ»ö</vehicleViolationRecord>
+<vehicleVin>LFV2B21K1D0904761</vehicleVin>
+<vehicleViolationRecord>å‘ç”Ÿ10æ¬¡è½¦ç¥¸</vehicleViolationRecord>
 </accPolicies>
 <accident>
-<acceptor>°ÂÀ­ÖìÍú</acceptor>
-<accidentCourse>²Ù×÷Ê§Îó£¬Åö²Á</accidentCourse>
-<accidentNo>=accidentNo=</accidentNo>
+<acceptor>å¥¥æ‹‰æœ±æ—º</acceptor>
+<accidentCourse>æ“ä½œå¤±è¯¯ï¼Œç¢°æ“¦</accidentCourse>
+<accidentNo>lnacc2017062605</accidentNo>
 <accidentProcessDept>05</accidentProcessDept>
 <accidentProcessMode>02</accidentProcessMode>
 <accidentReason>21</accidentReason>
 <accidentSection>01</accidentSection>
-<agent>±¨°¸´úÀíÈË</agent>
+<agent>æŠ¥æ¡ˆä»£ç†äºº</agent>
 <bodyInjuryFlag>0</bodyInjuryFlag>
-<businessNature>ÒµÎñÀ´Ô´</businessNature>
-<claimCompanyName>°¸¼þ´¦Àí»ú¹¹</claimCompanyName>
+<businessNature>ä¸šåŠ¡æ¥æº</businessNature>
+<claimCompanyName>æ¡ˆä»¶å¤„ç†æœºæž„</claimCompanyName>
 <compulsorySelfPayFlag>1</compulsorySelfPayFlag>
 <contactMobileNo>155555555555</contactMobileNo>
 <contactName>ContactName</contactName>
 <contactTelNo>155555555555</contactTelNo>
 <damageArea>01</damageArea>
-<damageDate>2017-09-31T03:00:00.560+08:00</damageDate>
+<damageDate>2017-05-04T03:00:00.560+08:00</damageDate>
 <damageReason>21</damageReason>
-<damageSite>ÒÊÃÉÂ·113ºÅ</damageSite>
+<damageSite>æ²‚è’™è·¯113å·</damageSite>
 <damageSiteType>14</damageSiteType>
-<estimateSite>ÒÊÃÉÂ·113ºÅ</estimateSite>
+<estimateSite>æ²‚è’™è·¯113å·</estimateSite>
 <greatCaseFlag>1</greatCaseFlag>
 <insuredMobileNo>155555555555</insuredMobileNo>
-<insuredName>¹Ë×ÓÑÔ</insuredName>
+<insuredName>é¡¾å­è¨€</insuredName>
 <insuredPhoneNo>18644557899</insuredPhoneNo>
 <policyCompanyName>CIC</policyCompanyName>
 <relToInsured>04</relToInsured>
-<reportDate>2018-01-01T09:20:47.431+08:00</reportDate>
+<reportDate>2017-05-04T09:20:47.431+08:00</reportDate>
 <reportFirstPlaceFlag>1</reportFirstPlaceFlag>
 <reportLossAmount>10000.00</reportLossAmount>
 <reportNo>BA0001</reportNo>
-<reporter>ãÛÐ¡ÃÀ</reporter>
+<reporter>é˜šå°ç¾Ž</reporter>
 <reporterFixedTelNo>12345678</reporterFixedTelNo>
 <reporterTelNo>18611227899</reporterTelNo>
 <selfClaimFlag>0</selfClaimFlag>
 <surveyMode>01</surveyMode>
 <surveyType>01</surveyType>
-<weather>Òõ</weather>
+<weather>é˜´</weather>
 </accident>
     <claimInfo>
-        <accidentNo>=accidentNo=</accidentNo>
+        <accidentNo>lnacc2017062605</accidentNo>
         <bigCaseFlag>0</bigCaseFlag>
-        <claimCompanyId>=claimCompanyId=</claimCompanyId>
-        <claimNo>=claimNo=</claimNo>
+        <claimCompanyId>2366</claimCompanyId>
+        <claimNo>lncl20170626050101</claimNo>
         <claimSource>1</claimSource>
         <entrustFlag>0</entrustFlag>
         <entrustLimitAmount>100</entrustLimitAmount>
-        <estimateCompanyId>=claimCompanyId=</estimateCompanyId>
+        <estimateCompanyId>2366</estimateCompanyId>
         <commercialPolicyNo>Policy20161207002</commercialPolicyNo>
-        <operableCompanyId>=claimCompanyId=</operableCompanyId>
+        <operableCompanyId>2366</operableCompanyId>
         <quickCompensateFlag>1</quickCompensateFlag>
         <reportNo>BA0001</reportNo>
         <taskType>01</taskType>
@@ -354,25 +342,25 @@
         <surveyType>01</surveyType>
     </surveyInfo>
     <survey>
-        <accidentNo>=accidentNo=</accidentNo>
+        <accidentNo>lnacc2017062605</accidentNo>
         <assignDate>2017-05-04T09:20:47.431+08:00</assignDate>
         <attachmentSystem>01</attachmentSystem>
-        <claimCompanyId>=claimCompanyId=</claimCompanyId>
+        <claimCompanyId>2366</claimCompanyId>
         <commercialPolicyNo>Policy20161207002</commercialPolicyNo>
         <firstAssignDate>2017-05-04T09:20:47.431+08:00</firstAssignDate>
         <insuredLevel>01</insuredLevel>
-        <insuredName>ÀäÎÄÇä</insuredName>
-        <reportDate>2017-09-31T17:22:23.543+08:00</reportDate>
-        <reportNo>acc_20170917_01</reportNo>
-        <surveyCompanyId>=claimCompanyId=</surveyCompanyId>
+        <insuredName>å†·æ–‡å¿</insuredName>
+        <reportDate>2017-01-08T17:22:23.543+08:00</reportDate>
+        <reportNo>BA0001</reportNo>
+        <surveyCompanyId>2366</surveyCompanyId>
         <surveySource>1</surveySource>
         <compulsoryPolicyNo>Policy20161207001</compulsoryPolicyNo>
         <validFlag>1</validFlag>
     </survey>
-    <userAccount>=estimator=</userAccount>
+    <userAccount>ln_test</userAccount>
     <vehicleBaseInfo>
-        <lossVehicleType>=lossVehicleType=</lossVehicleType>
-        <plateNo>»¦A12345</plateNo>
+        <lossVehicleType>01</lossVehicleType>
+        <plateNo>äº¬WQ3008</plateNo>
     </vehicleBaseInfo>
     <claimVehicleLossInfos>
         <collisionPoint>1M</collisionPoint>
@@ -384,23 +372,18 @@
     </claimVehicleLossInfos>
     <vehicleBaseInfo>
         <brandModel>FV7184</brandModel>
-        <currentValue>50</currentValue>
+        <currentValue>18.8</currentValue>
         <engineNo>1111</engineNo>
         <licenseFirstRegisterDate>2017-05-21T09:20:47.431+08:00</licenseFirstRegisterDate>
-        <lossVehicleType>=lossVehicleType=</lossVehicleType>
+        <lossVehicleType>01</lossVehicleType>
         <plateColorId>01</plateColorId>
-        <plateNo>»¦A12345</plateNo>
-        <plateType>01</plateType>	
+        <plateNo>äº¬WQ3008</plateNo>
+        <plateType>01</plateType>
         <purchasePrice>18.8</purchasePrice>
         <usingType>01</usingType>
         <vehicleBodyColorId>01</vehicleBodyColorId>
         <vehicleCategory>01</vehicleCategory>
-        <vin>=vin=</vin>
+        <vin>LFV2B21K1D0904789</vin>
     </vehicleBaseInfo>
- <vehicleDefineInfo>
-      
-    </vehicleDefineInfo>
-</claim>]]></arg0>
-      </ns2:pushClaim>
-   </soap:Body>
-</soap:Envelope>
+
+</claim>

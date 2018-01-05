@@ -14,32 +14,32 @@ public class JsonPathTest {
         try {
             json = FileUtils.readFileToString(new File(path), "utf-8");
             ReadContext context = JsonPath.parse(json);
-            //Êä³öbook[1]µÄauthorÖµ
-            //·½·¨Ò»
+            //ï¿½ï¿½ï¿½book[1]ï¿½ï¿½authorÖµ
+            //ï¿½ï¿½ï¿½ï¿½Ò»
             String author = context.read("$.store.book[1].author");
-            //·½·¨¶þ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             String author1 = context.read("$['store']['book'][1]['author']");
             System.out.println("$.store.book[1].author = "+author+"-------\n"+author1);//$.store.book[1].author = Evelyn Waugh
-            //Êä³öbook[*]ÖÐcategory == 'reference'µÄbook
+            //ï¿½ï¿½ï¿½book[*]ï¿½ï¿½category == 'reference'ï¿½ï¿½book
             List<Object> categorys = context.read("$.store.book[?(@.category == 'reference')]");
             for(Object st: categorys){
                 System.out.println(st.toString());
                 //{category=reference, author=Nigel Rees, title=Sayings of the Century, price=8.95}
             }
 
-            //Êä³öbook[*]ÖÐprice>10µÄbook
+            //ï¿½ï¿½ï¿½book[*]ï¿½ï¿½price>10ï¿½ï¿½book
             List<Object> prices = context.read("$.store.book[?(@.price>10)]");
             for(Object p:prices){
                 System.out.println(p.toString());
                 //{category=fiction, author=Evelyn Waugh, title=Sword of Honour, price=12.99, isbn=0-553-21311-3}
             }
-            //bicycle[*]ÖÐº¬ÓÐcolorÔªËØµÄbicycle
+            //bicycle[*]ï¿½Ðºï¿½ï¿½ï¿½colorÔªï¿½Øµï¿½bicycle
             List<Object> color = context.read("$.store.bicycle[?(@.color)]");
             for(Object is :color){
                 System.out.println(is.toString());//{color=red, price=19.95}
             }
 
-            //Êä³ö¸ÃjsonÖÐËùÓÐpriceµÄÖµ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½jsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½priceï¿½ï¿½Öµ
             List<Object> pp = context.read("$..price");
             for(Object p :pp){
                 System.out.println(p.toString()); //8.95  12.99   19.95
